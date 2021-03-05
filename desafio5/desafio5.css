@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(238, 232, 232);
+}
+
+hr{
+    margin-top: 5px;
+}
+
+.titulo{
+    color: gray !important;
+}
+
+.backForm{
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(54, 54, 54, 0.5);
+}
+
+#flex{
+    display: flex;
+}
+
+.lados{
+    width: 50%;
+    margin: 5px;
+}
+
+.btn{
+    margin: 5px;
+}
+.titulo2{
+    font-size: 20px;
+    color: gray !important;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+table{
+    margin-top: 5px !important;
+}
+
+.btnGrey{
+    background-color: rgb(163, 163, 163);
+    color: white;
+}
+
+.btnRed{
+    width: 90% !important;
+    margin: auto !important;
+}
+
+.head{
+    box-shadow: 1px 1px 1px rgba(105, 105, 105, 0.767);
+}
+
+.lbFiltros{
+    margin-top: 5px;
+}
+
+span{
+    color: red;
+}
+
+.btnAddP{
+    margin-top: 37px;
+    height: fit-content !important;
+}
+
+.backtbProduto{
+    background-color: rgb(250, 248, 248) !important;
+    padding: 5px;
+    border: 1px  rgb(168, 168, 168) solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 5px;
+}
+
+.divCompras{
+    margin-top: 55px !important;
+}

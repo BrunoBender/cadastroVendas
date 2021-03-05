@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sênior</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="desafio5.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light head">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo" href="#">Vendas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <label for="exampleInputEmail1" class="form-label titulo2">Cadastro vendas</label>
+        <div class="backForm">
+            <label for="exampleInputEmail1" class="form-label">Pedido</label>
+            <hr>
+            <div id="flex">
+                <div id="direita" class="lados">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nome*</label>
+                            <input type="text" class="form-control" id="nomeCli" aria-describedby="emailHelp">
+                            <span id="spNome"></span>
+                        </div>
+                    </form>
+                </div>
+                <div id="esquerda" class="lados">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Total da compra* </label>
+                            <input type="number" class="form-control" id="compra" aria-describedby="emailHelp">
+                            <span id="spTermoI"></span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            
+
+            <div class="backtbProduto">
+                <div id="flex">
+                    <div id="direita" class="lados">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Produto: </label>
+                                <input type="text" class="form-control" id="nomeP" aria-describedby="emailHelp">
+                                <span id="spNome"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-primary btn btnAddP" onclick="adicionarP()">Adicionar</button>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <th>Nome Produto</th>
+                    </thead>
+                    <tbody id="tbProdutos">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+            <button type="button" class="btn btn-primary btn" onclick="addCliente()">Salvar pedido</button>
+            <button type="button" class="btn btn-light btn btnGrey" onclick="cancelar()">Cancelar</button>
+
+
+        </div>
+
+        <div class="backForm divCompras">
+            <label for="exampleInputEmail1" class="form-label lbFiltros">COMPRAS</label>
+        </div>
+        <div class="backForm">
+
+            <button type="button" class="btn btn-light btn btnGrey" onclick="limparTodos()">Limpar todos</button>
+
+            <table class="table table-bordered">
+                <thead>
+                    <th>Cliente</th>
+                    <th>Total da compra</th>
+                    <th>Itens</th>
+                </thead>
+                <tbody id="tbClientes">
+                    
+                </tbody>
+            </table>
+            <div class="container-fluid">
+                <div class="btn-toolbar justify-content-between " role="toolbar"
+                    aria-label="Toolbar with button groups">
+                    <div class="btn-group " role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary ">Anterior</button>
+                        <button type="button" class="btn btn-outline-secondary btnFooter">1</button>
+                        <button type="button" class="btn btn-outline-secondary btnFooter">2</button>
+                        <button type="button" class="btn btn-outline-secondary btnFooter">3</button>
+                        <button type="button" class="btn btn-outline-secondary btnFooter">Próximo</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="desafio5.js"></script>
+</body>
+
+</html>
